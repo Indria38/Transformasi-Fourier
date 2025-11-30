@@ -10,14 +10,14 @@ st.set_page_config(page_title="Filter Frekuensi Fourier", layout="wide")
 st.title("Aplikasi Filter Frekuensi Fourier 2D")
 st.markdown("""
 Aplikasi ini menunjukkan penerapan filter low-pass dan high-pass pada domain frekuensi 
-menggunakan Transformasi Fourier 2D. Sesuaikan parameter menggunakan slider di sidebar.
+menggunakan Transformasi Fourier 2D. Sesuaikan parameter radius menggunakan slider di sidebar.
 """)
 
 # Sidebar untuk parameter
 st.sidebar.header("Filter Parameter")
 
 # Parameter yang dapat diatur
-radius = st.sidebar.slider("Radius Low-pass Filter", 
+radius = st.sidebar.slider("Radius Mask", 
                           min_value=1, 
                           max_value=100, 
                           value=30,
